@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Shwoom Browser</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>shwoom.ico</normaloff>shwoom.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -37,7 +41,8 @@
            <string/>
           </property>
           <property name="icon">
-           <iconset theme="back"/>
+           <iconset theme="back">
+            <normaloff>.</normaloff>.</iconset>
           </property>
           <property name="shortcut">
            <string>Alt+Left</string>
@@ -50,7 +55,8 @@
            <string/>
           </property>
           <property name="icon">
-           <iconset theme="forward"/>
+           <iconset theme="forward">
+            <normaloff>.</normaloff>.</iconset>
           </property>
           <property name="shortcut">
            <string>Alt+Right</string>
@@ -173,5 +179,6 @@
   <slot>set_new_url()</slot>
   <slot>apply_shwoom()</slot>
   <slot>on_link_clicked()</slot>
+  <slot>set_background()</slot>
  </slots>
 </ui>

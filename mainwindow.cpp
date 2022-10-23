@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->webView->setUrl(QUrl{"https://en.wikipedia.org/wiki/Mushroom"});
+
+    setWindowIcon(QIcon{":/logo/shwoom.ico"});
 }
 
 MainWindow::~MainWindow()
@@ -25,7 +27,6 @@ void MainWindow::set_new_url()
 
 void MainWindow::apply_shwoom()
 {
-    std::cout << "Shwoom" << std::endl;
     QWebFrame* web_frame = ui->webView->page()->mainFrame();
     web_frame->evaluateJavaScript(
                 "var colors = [\"red\", \"darkorange\", \"yellow\", \"lime\", \"green\", \"aqua\", \"teal\", \"blue\", \"purple\", \"fuchsia\"];"
